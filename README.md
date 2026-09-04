@@ -102,7 +102,8 @@ Free to use, modify, and distribute.
 
 ---
 
-## 📋 Notes
+## 📋 Notes and Disclosures
+- The app was created with assitance from Gemini AI.
 - The source code comments are whimsical, crafted with care, caffeine, and mild confusion.
 - Built with pure Win32 API for the smallest executable size, instant launch speed, and zero external runtime dependencies.
 - Includes [HowTo - Git CLI Instructions.md](HowTo%20-%20Git%20CLI%20Instructions.md) for handy CLI reference.
