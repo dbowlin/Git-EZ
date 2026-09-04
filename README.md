@@ -22,27 +22,45 @@
 
 ---
 
+## Screenshot
+
+![](screenshot.png)
+
+---
+
 ## 🎮 How to Use
 
+
+
 ### 1. Launch `git-ez`
+
 Double-click `bin/git-ez.exe` in Windows Explorer, or launch it from PowerShell / CMD:
+
 ```powershell
 .\bin\git-ez.exe
 ```
 
+
+
 ### 2. Choose Your Project Folder
+
 - Click **"Browse..."** to select your project folder with the native Windows folder dialog, or type/paste the directory path into the folder box.
 - `git-ez` will immediately inspect the directory:
   - If it's a **new folder**, it scans files, detects your tech stack, auto-fills a clean repository name, and selects the matching `.gitignore` recipe.
   - If it's an **existing Git repository**, it switches to **Sync & Push** mode and reports your branch name and uncommitted changes.
 
+
+
 ### 3. Review Settings & Take Off!
+
 - Choose **Private (Safe)** or **Public**.
 - Customize your commit message (default: `"Initial commit"` or `"Update project files"`).
 - Click **"🚀 Publish to GitHub"** (or **"✨ Sync & Push to GitHub"**).
 - Watch live progress in the status log. When finished, your repository URL is automatically copied to your clipboard and opened in your web browser!
 
 ---
+
+
 
 ## 🛠️ CLI Options
 
@@ -60,34 +78,50 @@ OPTIONS:
 ```
 
 *Example:*
+
 ```cmd
 bin\git-ez.exe -d "C:\Users\Username\Projects\my-cool-app"
 ```
 
 ---
 
+
+
 ## 📦 Building from Source
 
+
+
 ### Prerequisites
+
 A compatible C99 compiler on Windows:
+
 - **GCC** (MinGW-w64 / w64devkit) *(Recommended)*
 - **Zig** (`zig cc`)
 - **Clang** / LLVM
 - **MSVC** (`cl.exe`)
 
+
+
 ### Build with `build.bat`
+
 Run the provided automated build script:
+
 ```cmd
 build.bat
 ```
+
 The script compiles the Windows manifest resource and builds an optimized, stripped executable in `bin\git-ez.exe` (~71 KB).
 
 ### Build with `make`
+
 ```cmd
 make
 ```
 
+
+
 ### Build with CMake
+
 ```cmd
 mkdir build && cd build
 cmake ..
@@ -96,14 +130,21 @@ cmake --build . --config Release
 
 ---
 
+
+
 ## 📄 License
+
 [MIT License](https://opensource.org/license/mit).  
 Free to use, modify, and distribute.
 
 ---
 
+
+
 ## 📋 Notes and Disclosures
+
 - The app was created with assitance from Gemini AI.
 - The source code comments are whimsical, crafted with care, caffeine, and mild confusion.
 - Built with pure Win32 API for the smallest executable size, instant launch speed, and zero external runtime dependencies.
 - Includes [HowTo - Git CLI Instructions.md](HowTo%20-%20Git%20CLI%20Instructions.md) for handy CLI reference.
+
